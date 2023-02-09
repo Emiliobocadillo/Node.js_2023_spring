@@ -3,11 +3,11 @@
 // --------------------------------------
 
 
-// Exercise 1 - Console and constiables
+// EXERCISE 1 - CONSOLE AND CONSTIABLES
 
 const firstName = "Anders";
 const lastName = "Latif";
-// EXERCISE
+
 // show in the console
 // My first name is Anders and my last name is Latif
 
@@ -15,7 +15,8 @@ console.log("My first name is " + firstName + " and my last name is " + lastName
 console.log(`My first name is ${firstName} and my last name is ${lastName}`);
 // --------------------------------------
 
-// Exercise 2 - Numbers and Strings
+
+// EXERCISE 2 - NUMBERS AND STRINGS
 
 const year = "2022";
 const number = 1;
@@ -27,11 +28,5 @@ const number = 1;
 const resultOne = Number(year) + number;
 const resultTwo = parseInt(year) + number;
 const resultThree = +year + number;
-
-
-console.log(resultOne);
-console.log(resultTwo);
-console.log(resultThree);
-console.log(parseInt("2343dsfdsfds"));
 // --------------------------------------
 
