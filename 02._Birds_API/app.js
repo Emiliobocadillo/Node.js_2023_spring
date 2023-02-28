@@ -7,9 +7,9 @@ const app = express();
 app.use(express.json());
 
 let birds = [
-  // { id: 1, species: "Seagull", primaryColor: "White" },
-  // { id: 2, species: "Raven", primaryColor: "Black" },
-  // { id: 3, species: "Flamingo", primaryColor: "Pink" },
+  { id: 1, species: "Seagull", primaryColor: "White" },
+  { id: 2, species: "Raven", primaryColor: "Black" },
+  { id: 3, species: "Flamingo", primaryColor: "Pink" },
 ];
 
 // GET METHOD TO RETRIEVE ALL BIRDS
@@ -48,9 +48,7 @@ app.patch("/birds/:id", (req, res) => {
   } else {
     if (species) bird.species = species;
     if (primaryColor) bird.primaryColor = primaryColor;
-    res.send(
-      `The bird with id "${id}" was succesfully updated`
-    );
+    res.send(`The bird with id "${id}" was succesfully updated`);
   }
 });
 

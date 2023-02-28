@@ -56,6 +56,30 @@ app.post("/package", (req, res) => {
     res.send({message: req.body});
 });
 
+app.get("/time/time",(req, res) => {
+    res.send({
+        timeUTC: new Date(),
+        timeLocal: Date(),
+        unixTimeStamp: Date.now()
+    });
+})
+
+app.get("/time/day",(req, res) => {
+    res.send({
+        timeUTC: new Date().getDay(),
+        timeLocal: Date().getDay(),
+        unixTimeStamp: Date.now().getDay()
+    });
+})
+
+app.get("/time/month",(req, res) => {
+    res.send({
+        timeUTC: new Date().getMonth(),
+        timeLocal: Date().getMonth(),
+        unixTimeStamp: Date.now().getMonth()
+    });
+})
+
 
 
 
