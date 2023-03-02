@@ -6,13 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./frontpage/frontpage.css" />
 
-    <title>Time To Deploy!</title>
+    <title>The Universe In Time</title>
+
+    <style>
+      body {
+        background-color: rgb(86, 90, 93);
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      #container {
+        text-align: center;
+      }
+      .section {
+        margin: auto;
+        width: 50%;
+        display: flex;
+      }
+      .element {
+        height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #timeline {
+        width: 100%;
+        color: red;
+        background-color: black;
+        display: flex;
+        align-items: flex-start;
+      }
+      #sun {
+        width: 5%;
+        background-color: orangered;
+      }
+      #earth {
+        width: 5%;
+        color: white;
+        background-color: blue;
+      }
+      #light {
+        width: 20px;
+        background-color: yellow;
+        transition: transform 1s;
+        transform: translateX(;
+      }
+      .section:hover #light {
+        transform: translateX(100%);
+      }
+    </style>
   </head>
   <body>
-    <p>dfdfdfsdfs</p>
-    <div class="test">
-      <h1>Time until handin</h1>
-      <p id="countdown"></p>
+    <div id="container">
+      <h1>The Universe In Time</h1>
+      <div class="section">
+        <div id="sun" class="element">Sun</div>
+        <div id="timeline" class="element">
+          <div id="light" class="element"></div>
+        </div>
+        <div id="earth" class="element">Earth</div>
+      </div>
     </div>
 
     <script src="./frontpage/frontpage.js"></script>
